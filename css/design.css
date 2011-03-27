@@ -26,7 +26,7 @@
 }
 #dokuwiki__header h1 a {
     text-decoration: none;
-    color: #00c;
+    color: #f15821;
     background-color: inherit;
 }
 #dokuwiki__header p.claim {
@@ -101,9 +101,9 @@
 /*____________ user tools ____________*/
 
 #dokuwiki__usertools {
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    right: 0;
+    right: 0;*/
     border-bottom: 1px solid __border__;
     background-color: __background_alt__;
     width: 100%;
@@ -112,34 +112,42 @@
 #dokuwiki__pagetools ul {
     /* imitate #dokuwiki__site */
     margin: 0 auto;
-    max-width: 64em;
+    /*max-width: 960px;*/
     padding: 0 1em;
+    /*list-style: none;*/
 }
 #IE6 #dokuwiki__usertools ul {
     width: 100%;
 }
 #dokuwiki__usertools ul li.user {
-    float: left;
+    float: right;
     margin-left: 0;
+}
+#dokuwiki__pagetools li,
+#dokuwiki__usertools li {
+    display: inline; 
 }
 
 /*____________ page tools ____________*/
 
 #dokuwiki__pagetools {
-    position: fixed;
+    /*position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0;*/
     border-top: 1px solid __border__;
     background-color: __background_alt__;
     width: 100%;
-    z-index: 10;
+    /*z-index: 10;*/
 }
 #IE6 #dokuwiki__content {
     margin-bottom: 1.4em;
 }
-#dokuwiki__pagetools ul li {
+#dokuwiki__pagetools ul {
+	text-align: right;
+}
+#dokuwiki__pagetools ul li {/*
     display: inline;
-    margin: 0 1.5em 0 0;
+    margin: 0 1.5em 0 0;*/
 }
 #dokuwiki__pagetools ul li a.action.top {
     float: right;
@@ -154,7 +162,6 @@
     top: 0;
     right: 0;
 }
-
 
 /* sidebar
 ********************************************************************/
@@ -191,7 +198,9 @@
 
 .dokuwiki .page {
 }
-
+.doc {
+	text-align: right;
+}
 /*____________ misc ____________*/
 
 /* license note in footer and under edit window */
@@ -245,6 +254,7 @@
 }
 #dokuwiki__footer .license {
     clear: both;
+    text-align: center;
 }
 #dokuwiki__footer .license img {
     margin: 0 .5em 0 0;

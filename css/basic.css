@@ -86,7 +86,7 @@ li li {
     font-size: 100%;
 }
 
-ul             { list-style: disc outside; }
+ul             { list-style: circle outside; }
 ol             { list-style: decimal outside; }
 ol ol          { list-style-type: lower-alpha; }
 ol ol ol       { list-style-type: upper-roman; }
@@ -128,18 +128,20 @@ a {
 }
 a:link, a:visited {
     text-decoration: none;
-    color: #00c; /* §colour */
+    color: #808080; /* §colour */
 }
 a:link:hover, a:visited:hover,
 a:link:focus, a:visited:focus,
 a:link:active, a:visited:active {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px #f15821 solid;
+    color: #f15821; /* §colour */
 }
 a:link:focus, a:visited:focus {
     outline: 1px dotted;
 }
 a:link:active, a:visited:active {
-    color: #c00; /* §colour */
+    color: #f15821; /* §colour */
 }
 
 

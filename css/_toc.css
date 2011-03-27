@@ -72,7 +72,12 @@
   (e.g. if heading level 3 follows directly after heading level 1) */
 .dokuwiki #toc__inside ul li.clear {
 }
-
+.dokuwiki #toc__inside .level1 {
+	font-weight: bold;
+}
+.dokuwiki #toc__inside .level2 {
+	font-weight: normal;
+}
 
 /* sitemap (and backlinkss)
 ********************************************************************/
