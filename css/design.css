@@ -73,7 +73,7 @@
 #dokuwiki__pagetools a.wikilink1,
 #dokuwiki__usertools a.wikilink2,
 #dokuwiki__pagetools a.wikilink2 {
-    color: #00c;
+    color: #808080;
     border-bottom-width: 0;
 }
 #dokuwiki__usertools a.wikilink2:hover,

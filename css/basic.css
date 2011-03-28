@@ -28,7 +28,8 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 caption, legend {
-    font-family: Constantia, Utopia, Lucidabright, Lucida, Georgia, serif;
+    font: normal 100%/1.4 Frutiger, "Frutiger Linotype", Univers, Calibri, Myriad, "Liberation Sans", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: Constantia, Utopia, Lucidabright, Lucida, Georgia, serif;*/
     font-weight: bold;
     color: __text_neu__;
     background-color: inherit;
