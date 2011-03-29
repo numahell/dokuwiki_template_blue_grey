@@ -38,10 +38,10 @@ $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && $_SERVER
         <div id="dokuwiki__header"><div class="pad">
 
             <div class="headings">
-                <h1><?php tpl_link(wl(),$conf['title'],'id="dokuwiki__top" accesskey="h" title="[H]"') ?></h1>
+                <h1><?php tpl_link(wl(),$conf['title'],'id="dokuwiki__top" accesskey="h" title="OpenData à Toulouse et ses environs"') ?></h1>
                 <?php /* how to insert logo instead (if no CSS image replacement technique is used):
-                        upload your logo into the data/media folder (root of the media manager) and replace 'logo.png' accordingly:
-                        tpl_link(wl(),'<img src="'.ml('logo.png').'" alt="'.$conf['title'].'" />','id="dokuwiki__top" accesskey="h" title="[H]"') */ ?>
+                        upload your logo into the data/media folder (root of the media manager) and replace 'logo.png' accordingly:*/
+                        tpl_link(wl(),'<img src="'.ml('logo.png').'" alt="'.$conf['title'].'" />','id="dokuwiki__top" accesskey="h" title="OpenData à Toulouse et ses environs"')  ?>
                 <?php if (tpl_getConf('tagline')): ?>
                     <p class="claim"><?php echo tpl_getConf('tagline') ?></p>
                 <?php endif ?>

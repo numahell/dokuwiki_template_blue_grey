@@ -21,13 +21,18 @@
     margin-bottom: 2.1em;
 }
 #dokuwiki__header h1 {
-    margin-bottom: 0;
-    font-size: 1.5em;
+    margin-top: -1px;
+    margin-left: -1px;
+    font-size: 1px;
+    visibility: hidden;
 }
 #dokuwiki__header h1 a {
     text-decoration: none;
-    color: #f15821;
+    color: #fff;
     background-color: inherit;
+}
+#dokuwiki__header a:hover {
+    border: none;
 }
 #dokuwiki__header p.claim {
     margin-bottom: 0;

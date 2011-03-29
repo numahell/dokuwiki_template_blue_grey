@@ -11,6 +11,9 @@ body {
     margin: 0 auto;
     max-width: 960px;
     padding: 1.4em 1em;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px;
 }
 #dokuwiki__site .site {
 }
