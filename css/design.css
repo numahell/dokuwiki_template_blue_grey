@@ -11,19 +11,17 @@
 ********************************************************************/
 
 #dokuwiki__header {
-    margin: 1em 0 0;
+    margin: 0;
 }
 #IE7 #dokuwiki__header {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
-#dokuwiki__header .headings {
-    margin-bottom: 2.1em;
-}
 #dokuwiki__header h1 {
     margin-top: -1px;
     margin-left: -1px;
     font-size: 1px;
+    height: 1px;
     visibility: hidden;
 }
 #dokuwiki__header h1 a {
@@ -61,6 +59,33 @@
     margin-right: .5em;
 }
 
+/* tabs
+ * ******************************************************************/
+#dokuwiki__tabs {
+    margin: 2em 0 1em;
+}
+#dokuwiki__tabs ul {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    background: url('images/bg_tabs.png') repeat-x 50% 0% #eee;
+    border-bottom: 4px solid #3e7da7;
+}
+#dokuwiki__tabs ul li {
+    margin: 0;
+    display: inline;
+    border-right: 1px #fff solid;
+}
+#dokuwiki__tabs a {
+    padding: 8px 0.5em;
+    font-weight: bold;
+    color: #3e7da7;
+    line-height: 30px;
+}
+#dokuwiki__tabs a:hover {
+    color: white;
+    background-color: #3e7da7;
+}
 #dokuwiki__header div.breadcrumbs {
     margin-bottom: .3em;
 }

@@ -41,7 +41,7 @@ $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && $_SERVER
                 <h1><?php tpl_link(wl(),$conf['title'],'id="dokuwiki__top" accesskey="h" title="OpenData à Toulouse et ses environs"') ?></h1>
                 <?php /* how to insert logo instead (if no CSS image replacement technique is used):
                         upload your logo into the data/media folder (root of the media manager) and replace 'logo.png' accordingly:*/
-                        tpl_link(wl(),'<img src="'.ml('logo.png').'" alt="'.$conf['title'].'" />','id="dokuwiki__top" accesskey="h" title="OpenData à Toulouse et ses environs"')  ?>
+                        tpl_link(wl(),'<img src="'.ml('logo2.png').'" alt="'.$conf['title'].'" />','id="dokuwiki__top" accesskey="h" title="OpenData à Toulouse et ses environs"')  ?>
                 <?php if (tpl_getConf('tagline')): ?>
                     <p class="claim"><?php echo tpl_getConf('tagline') ?></p>
                 <?php endif ?>
@@ -69,6 +69,12 @@ $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && $_SERVER
             </div>
             <div class="clearer"></div>
 
+            <!-- ********** tabs ********** -->
+            <div id="dokuwiki__tabs">
+                <?php tpl_include_page(tpl_getConf('sidebarID')) /* includes the given wiki page */ ?>
+            </div><!-- /tabs -->
+            <div class="clearer"></div>
+            
             <!-- BREADCRUMBS -->
             <?php if($conf['breadcrumbs']){ ?>
                 <div class="breadcrumbs"><?php tpl_breadcrumbs() ?></div>
@@ -84,12 +90,6 @@ $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && $_SERVER
 
         <div class="wrapper">
 
-            <!-- ********** ASIDE ********** -->
-            <div id="dokuwiki__aside"><div class="pad include">
-                <?php tpl_include_page(tpl_getConf('sidebarID')) /* includes the given wiki page */ ?>
-                <div class="clearer"></div>
-                
-            </div></div><!-- /aside -->
 
             <!-- ********** CONTENT ********** -->
             <div id="dokuwiki__content"><div class="pad">

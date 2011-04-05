@@ -8,12 +8,13 @@ body {
     margin: 0 auto;
 }
 #dokuwiki__site {
+    background-color: #EEEEEE;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0 1px 1px;
     margin: 0 auto;
     max-width: 960px;
     padding: 1.4em 1em;
-    border-color: #CCCCCC;
-    border-style: solid;
-    border-width: 0 1px;
 }
 #dokuwiki__site .site {
 }
@@ -35,6 +36,13 @@ body {
     #IE6 #dokuwiki__header .tools {
         width: 50%;
     }
+
+#dokuwiki__tabs ul {
+    list-style-type: none;
+}
+#dokuwiki__tabs ul li {
+    float: left;
+}
 
 #dokuwiki__site .wrapper {
     position: relative;
@@ -58,7 +66,7 @@ body {
         margin: 0 1.5em 0 0;
     }
 
-    /* make content wider when there's no sidebar */
+    /* make content wider when there's no sidebar *//*
     .mode_show #dokuwiki__content {
         float: right;
         margin-left: -__sidebar_width__;
@@ -66,7 +74,7 @@ body {
     }
     .mode_show #dokuwiki__content .pad {
         margin-left: __sidebar_width__;
-    }
+    }*/
 
 #dokuwiki__footer {
     clear: both;
